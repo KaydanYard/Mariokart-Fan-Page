@@ -1,3 +1,40 @@
+body {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Hind Siliguri", sans-serif;
+}
 
+body .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  background-color: #D72A1D;
+}
+body .head .headText {
+  display: flex;
+}
+body .head .headText a {
+  text-decoration: none;
+  color: #F4F5F6;
+}
+body .head .nav {
+  display: flex;
+  margin-right: 40px;
+}
+body .head .nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: #F4F5F6;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+}
+body .head .nav a:hover {
+  color: #D09439;
+  border-bottom: 3px solid #D09439;
+}
 
 /*# sourceMappingURL=mainStyles.css.map */
