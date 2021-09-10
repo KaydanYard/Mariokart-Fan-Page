@@ -6,23 +6,27 @@ body {
   font-family: "Hind Siliguri", sans-serif;
 }
 
-body .head {
+body .foot, body .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 10px;
   background-color: #D72A1D;
 }
+
+body .foot .nav, body .head .nav {
+  display: flex;
+  margin-right: 40px;
+  font-size: 1.5em;
+}
+
 body .head .headText {
   display: flex;
 }
 body .head .headText a {
   text-decoration: none;
   color: #F4F5F6;
-}
-body .head .nav {
-  display: flex;
-  margin-right: 40px;
+  font-size: 2em;
 }
 body .head .nav a {
   margin: 10px;
@@ -35,6 +39,27 @@ body .head .nav a {
 body .head .nav a:hover {
   color: #D09439;
   border-bottom: 3px solid #D09439;
+}
+body .head .nav #active {
+  border-bottom: 3px solid #D09439;
+}
+body .foot {
+  border: 1px solid black;
+}
+body .foot .footText {
+  color: #343A46;
+}
+body .foot .nav {
+  font-size: 1em;
+}
+body .foot .nav a {
+  text-decoration: none;
+  margin: 6px;
+  color: #343A46;
+  transition: 0.5s ease-in-out;
+}
+body .foot .nav a:hover {
+  color: #F4F5F6;
 }
 
 /*# sourceMappingURL=mainStyles.css.map */

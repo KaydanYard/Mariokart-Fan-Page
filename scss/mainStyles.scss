@@ -5,11 +5,7 @@ body {
   @extend %baseSettings;
 
   .head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px;
-    background-color: $maxred;
+    @extend %topbottom;
 
     .headText {
       display: flex;
@@ -17,12 +13,12 @@ body {
       a {
         text-decoration: none;
         color: $cultured;
+        font-size: 2em;
       }
     }
 
     .nav {
-      display: flex;
-      margin-right: 40px;
+      @extend %navSettings;
 
       a {
         margin: 10px;
@@ -36,6 +32,35 @@ body {
       a:hover {
         color: $harvest;
         border-bottom: 3px solid $harvest;
+      }
+
+      #active {
+        border-bottom: 3px solid $harvest;
+      }
+    }
+  }
+
+  .foot {
+    @extend %topbottom;
+    border: 1px solid black;
+
+    .footText {
+      color: $charcoal;
+    }
+
+    .nav {
+      @extend %navSettings;
+      font-size: 1em;
+    
+      a {
+        text-decoration: none;
+        margin: 6px;
+        color: $charcoal;
+        transition: 0.5s ease-in-out;
+      }
+
+      a:hover {
+        color: $cultured;
       }
     }
   }
