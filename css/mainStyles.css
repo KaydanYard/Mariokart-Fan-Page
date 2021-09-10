@@ -12,6 +12,7 @@ body .foot, body .head {
   justify-content: space-between;
   padding: 0px 10px;
   background-color: #D72A1D;
+  z-index: 1;
 }
 
 body .foot .nav, body .head .nav {
@@ -20,6 +21,9 @@ body .foot .nav, body .head .nav {
   font-size: 1.5em;
 }
 
+body .head {
+  border-bottom: 10px solid #B42318;
+}
 body .head .headText {
   display: flex;
 }
@@ -41,10 +45,11 @@ body .head .nav a:hover {
   border-bottom: 3px solid #D09439;
 }
 body .head .nav #active {
-  border-bottom: 3px solid #D09439;
+  border-bottom: 3px solid #B42318;
 }
-body .foot {
-  border: 1px solid black;
+body .head .nav #active:hover {
+  color: #D09439;
+  border-bottom: 3px solid #D09439;
 }
 body .foot .footText {
   color: #343A46;

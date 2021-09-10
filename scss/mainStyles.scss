@@ -6,6 +6,7 @@ body {
 
   .head {
     @extend %topbottom;
+    border-bottom: 10px solid $carnellian;
 
     .headText {
       display: flex;
@@ -30,19 +31,23 @@ body {
       }
 
       a:hover {
-        color: $harvest;
-        border-bottom: 3px solid $harvest;
+        color: $stargold;
+        border-bottom: 3px solid $stargold;
       }
 
       #active {
-        border-bottom: 3px solid $harvest;
+        border-bottom: 3px solid $carnellian;
+      }
+
+      #active:hover {
+        color: $stargold;
+        border-bottom: 3px solid $stargold;
       }
     }
   }
 
   .foot {
     @extend %topbottom;
-    border: 1px solid black;
 
     .footText {
       color: $charcoal;
