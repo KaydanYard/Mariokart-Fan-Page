@@ -2,44 +2,47 @@
 @import '_colors.scss';
 
 .main {
-    
-    h2 {
-      color:$stargold;
-    }
 
-    .intro{
-      @extend %base-mainC;
-        
-      .textMain {
-          @extend %text-pos
-      }
-    }
+  h2 {
+    color:$stargold;
+  }
 
-
-    .wii {
-      @extend %base-mainC;
-      flex-direction: row-reverse;
-        
-			.textWii {
-        @extend %text-pos;
-        
-				h2 {
-        	align-self:flex-end;
-        }
-      }
-    }
-
-    .doubledash {
-      @extend %base-mainC;
+  .intro{
+    @extend %base-mainC;
+    @extend %underline;
+    margin-top: 40px;
       
-			.textDoubledash {
-        @extend %text-pos
+    .textMain {
+      @extend %text-pos;
+    }
+  }
+
+
+  .wii {
+    @extend %base-mainC;
+    @extend %underline;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+      
+    .textWii {
+      @extend %text-pos;
+      
+      h2 {
+        align-self: flex-end;
       }
     }
-}
+  }
 
-@media screen and (max-width:830px) {
-    %base-mainC {
-        flex: column;
+  .doubledash {
+    @extend %base-mainC;
+    margin-top: 40px;
+    
+    .textDoubledash {
+      @extend %text-pos;
     }
+  }
+
+  .foot {
+    border-top: 10px solid $carnellian;
+  }
 }

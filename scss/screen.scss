@@ -1,0 +1,64 @@
+@import '_vars.scss';
+@import '_colors.scss';
+
+@media screen and (max-width:830px) {
+  body {
+    %baseSettings {
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Hind Siliguri', sans-serif;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      
+      .headText {
+        text-align: center;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    %base-mainC {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      img {
+        align-self: center;
+      }
+    }
+    
+    %text-pos {
+      text-align: center;
+      width: 100%;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      
+      #homeItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #homeItemText {
+          align-items: center;
+
+          h2 {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}
+  

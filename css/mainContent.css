@@ -1,34 +1,46 @@
 .main .doubledash, .main .wii, .main .intro {
   display: flex;
-  padding: 10px 5px;
   justify-content: space-around;
 }
 .main .doubledash img, .main .wii img, .main .intro img {
+  border: 1px solid #343A46;
   border-radius: 10px;
   box-shadow: 5px 6px 5px 0px rgba(0, 0, 0, 0.22);
-  width: 400px;
+  width: 50%;
   height: 350px;
+  object-fit: cover;
 }
 
 .main .doubledash .textDoubledash, .main .wii .textWii, .main .intro .textMain {
   display: flex;
+  margin: 0px 20px;
   width: 70%;
   flex-direction: column;
+}
+
+.main .wii, .main .intro {
+  border-bottom: 2px solid #dadfea;
+  width: 100%;
 }
 
 .main h2 {
   color: #D09439;
 }
+.main .intro {
+  margin-top: 40px;
+}
 .main .wii {
   flex-direction: row-reverse;
+  margin-top: 40px;
 }
 .main .wii .textWii h2 {
   align-self: flex-end;
 }
-@media screen and (max-width: 830px) {
-  .main .intro, .main .wii, .main .doubledash {
-    flex: column;
-  }
+.main .doubledash {
+  margin-top: 40px;
+}
+.main .foot {
+  border-top: 10px solid #B42318;
 }
 
 /*# sourceMappingURL=mainContent.css.map */

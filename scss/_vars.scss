@@ -30,21 +30,28 @@
 }
 
 %base-mainC {
-    display:flex;
-    padding:10px 5px;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
-    img {
-        border-radius: 10px;
-        box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.22);
-        width: 400px;
-        height: 350px;
-    }
+  img {
+    border: 1px solid $charcoal;
+    border-radius: 10px;
+    box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.22);
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+  }
 }
 
 %text-pos {
-    display:flex;
+  display: flex;
+  margin: 0px 20px;
 // Change width from 50% to 70%
-    width: 70%;
-    flex-direction: column;
+  width: 70%;
+  flex-direction: column;
+}
+
+%underline {
+  border-bottom: 2px solid #dadfea;
+  width: 100%;
 }
