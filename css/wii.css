@@ -4,6 +4,15 @@ body .content .wiiBanner img {
   height: 600px;
 }
 
+body .content .wiiText .wiiHeadText {
+  margin-top: 0;
+  padding-left: 20px;
+  border-top: 10px solid #B42318;
+  background-color: #D72A1D;
+  font-size: 1.8em;
+  padding: 20px 0px;
+}
+
 body .content .wiiBanner {
   width: 100%;
   height: 400px;
@@ -14,11 +23,7 @@ body .content .wiiText {
   flex-direction: column;
 }
 body .content .wiiText .wiiHeadText {
-  margin-top: 0;
-  border-top: 10px solid #B42318;
-  background-color: #D72A1D;
-  font-size: 1.8em;
-  padding: 20px 0px;
+  padding-left: 20px;
 }
 body .content .wiiText .wiiTextPara {
   width: 80%;

@@ -21,11 +21,8 @@ body {
 
 
       .wiiHeadText {
-        margin-top: 0;
-        border-top: 10px solid $carnellian;
-        background-color: $maxred;
-        font-size: 1.8em;
-        padding: 20px 0px;
+        padding-left: 20px;
+        @extend %bannertxtSettings;
       }
 
       .wiiTextPara {
