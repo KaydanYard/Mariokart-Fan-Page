@@ -55,3 +55,25 @@
   border-bottom: 2px solid #dadfea;
   width: 100%;
 }
+
+%base-dd {
+  display: flex;
+  justify-content: center;
+  
+  p {
+    width: 70%;
+  }
+  img {
+    width: 100%;
+  }
+
+  .imageM {
+    border-top: 30px solid #B42318;
+    border-bottom: 30px solid #B42318;
+    width: 1180px;
+  }
+
+  .charSelect {
+    width: 50%;
+  }
+}

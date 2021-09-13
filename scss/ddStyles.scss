@@ -1,0 +1,41 @@
+@import '_vars.scss';
+@import '_colors.scss'; 
+
+body {
+  .ddBanner {
+    width: 100%;
+      height: 400px;
+      overflow: hidden;
+
+      img {
+        @extend %bannerSettings;
+      }
+  }
+
+  .ddHeadText {
+    margin-top: 0;
+    border-top: 10px solid $carnellian;
+    background-color: $maxred;
+    font-size: 1.8em;
+    padding: 20px 0px;
+  }
+
+  .container {
+    @extend %base-dd;
+  }
+  
+  .aboutdd {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 10px;
+  
+    h2 {
+      color: $stargold;
+    }
+  }
+  
+  .charSelect {
+    width: 20%;
+  }
+}
