@@ -26,9 +26,6 @@
 .main h2 {
   color: #D09439;
 }
-.main .intro {
-  margin-top: 40px;
-}
 .main .wii {
   flex-direction: row-reverse;
   margin-top: 40px;

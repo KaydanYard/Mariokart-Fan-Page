@@ -10,7 +10,6 @@
   .intro{
     @extend %base-mainC;
     @extend %underline;
-    margin-top: 40px;
       
     .textMain {
       @extend %text-pos;
