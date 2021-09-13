@@ -1,0 +1,45 @@
+@import '_vars.scss';
+@import '_colors.scss';
+
+.main {
+    
+    h2 {
+      color:$stargold;
+    }
+
+    .intro{
+      @extend %base-mainC;
+        
+      .textMain {
+          @extend %text-pos
+      }
+    }
+
+
+    .wii {
+      @extend %base-mainC;
+      flex-direction: row-reverse;
+        
+			.textWii {
+        @extend %text-pos;
+        
+				h2 {
+        	align-self:flex-end;
+        }
+      }
+    }
+
+    .doubledash {
+      @extend %base-mainC;
+      
+			.textDoubledash {
+        @extend %text-pos
+      }
+    }
+}
+
+@media screen and (max-width:830px) {
+    %base-mainC {
+        flex: column;
+    }
+}
